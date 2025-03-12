@@ -1,1 +1,1 @@
-C Programming: A modern approach - K.N King (2nd edition
+C programming: A modern approach - K.N King (2nd edition)
