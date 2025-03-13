@@ -1,11 +1,13 @@
 #include <stdio.h>
 
 int main(void)
+
 {
     int hour, minutes;
 
     printf("Enter a 24-hour time: ");
     scanf("%d:%d", &hour, &minutes);
+
     if (hour > 24 || hour < 0 || minutes > 59 || minutes < 0)
     {
         printf("Incorrect input!");
