@@ -6,7 +6,7 @@
    Chapter 5, Programming Project 4
    In one state, single residents are subject to 
    the following income tax 
-   
+
    Income            Amount of tax
    -------------------------------
    Not over $750     1% of income
@@ -30,7 +30,7 @@ int main(void)
     scanf("%f", &taxIncome);
 
     if (taxIncome < 750)
-        taxDue = .001f * taxIncome;
+        taxDue = .01f * taxIncome;
     else if (taxIncome < 2250)
         taxDue = 7.50f + (.02f * (taxIncome - 750.00f));
     else if (taxIncome < 3750)
