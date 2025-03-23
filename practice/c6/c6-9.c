@@ -1,27 +1,17 @@
-/* c2p8.c
+/* c6-9.c
 
-   Ray Santos
-   August 18, 2013
+   Rafael Bonilla
+   March 23, 2025
 
    C Programming: A Modern Approach, Second Edition
-   Chapter 2. Programming Project 8
+   Chapter 6, Programming Project 9
 
-   Write a program that calculates the remaining balance on a loan
-   after the first, second, and third monthly payments:
-
-      Enter amount of loan: 20000.00
-      Enter interest rate: 6.0
-      Enter monthly payment: 386.66
-
-      Balance remaining after first payment: $19713.34
-      Balance remaining after second payment: $19425.25
-      Balance remaining after third payment: $19135.71
-
-   Display each balance with two digits after the decimal point.
-   Hint: Each month, the balance is decreased by the amount of the
-   payment, but increased by the balance times the monthly interest
-   rate. To find the monthly interest rate, convert the interest rate
-   entered by the user to a percentage and divide it by 12.
+   Programming Project 8 in Chapter 2 asked you to write a
+   program that calculates the remaining balance on a loan
+   after the first, second, and third monthly payments.
+   Modify the program so that it also asks the user to enter
+   the number of payments and then displays the balance
+   remaining after each of these payments.
 
 */
 
