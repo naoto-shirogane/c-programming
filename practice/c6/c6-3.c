@@ -27,25 +27,27 @@ int main(void)
     printf("Enter a fraction: ");
     scanf("%d/%d", &num, &den);
 
-    int n = num, m = den;
-
-    for (;;)
+    if (den == 0)
     {
-        if (m == 0)
-        {
-            gcd = n;
-            break;
-        }
-        else 
+        printf("You can't divide by 0!");
+    }
+
+    else
+    {
+        int n = num, m = den;
+
+        while (m != 0)    
         {
             remainder = n % m;
             n = m;
             m = remainder;
         }
+    
+        gcd = n;
+    
+        num /= gcd;
+        den /= gcd;
+    
+        printf("In lowest terms: %d/%d", num, den);
     }
-
-    num /= gcd;
-    den /= gcd;
-
-    printf("In lowest terms: %d/%d", num, den);
 }
