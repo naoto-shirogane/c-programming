@@ -19,7 +19,7 @@
 
 int main(void)
 {
-    int month1, day1, year1,
+    int date1, date2, month1, day1, year1,
     month2, day2, year2;
 
     printf("Enter first date (mm/dd/yy): ");
@@ -28,40 +28,21 @@ int main(void)
     printf("Enter the second date (mm/dd/yy): ");
     scanf("%2d/%2d/%2d", &month2, &day2, &year2);
 
-    printf("\n");
+    date1 = ((month1 * 30) + day1 + (year1 * 365));
+    date2 = ((month2 * 30) + day2 + (year2 * 365));
 
-    if (year1 == year2)
+    if (date1 < date2)
     {
-        if (month1 == month2)
-        {
-            if (day1 == day2)
-            {
-                printf("They're the same exact date!");
-            }
-            else if (day1 > day2)
-            {
-                printf("Second date is earlier than second date");
-            }
-            else 
-            {
-                printf("First date is earlier than second date");
-            }
-        }
-        else if (month1 > month2)
-        {
-            printf("Second date is earlier than second date");
-        }
-        else 
-        {
-            printf("First date is earlier than second date");
-        }
+        printf("- %d/%d/%.2d comes earlier than %d/%d/%.2d", day1, month1, year1, day2, month2, year2);
     }
-    else if (year1 > year2)
+
+    else if (date2 < date1)
     {
-        printf("Second date is earlier than second date");
+        printf("- %d/%d/%.2d comes earlier than %d/%d/%.2d", day2, month2, year2, day1, month1, year1);
     }
+
     else
     {
-        printf("First date is earlier than second date");
+        printf("- They're the same date.");
     }
 }
