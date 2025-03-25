@@ -1,4 +1,4 @@
-/* c7p06.c
+/* c7-6.c
 
    Rafael Bonilla
    March 24, 2025
