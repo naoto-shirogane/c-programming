@@ -30,18 +30,34 @@ int main(void)
     scanf("%f", &taxIncome);
 
     if (taxIncome < 750)
+    {
         taxDue = .01f * taxIncome;
+    }
+        
     else if (taxIncome < 2250)
+    {
         taxDue = 7.50f + (.02f * (taxIncome - 750.00f));
+    }
+        
     else if (taxIncome < 3750)
+    {
         taxDue = 37.50f + (.03f * (taxIncome - 2250.00f));
+    }
+        
     else if (taxIncome < 5250)
+    {
         taxDue = 82.50f + (.04f * (taxIncome - 3750.00f));
+    }
+        
     else if (taxIncome < 7000)
+    {
         taxDue = 142.50f + (.05f * (taxIncome - 5250.00f));
+    }
+        
     else
+    {
         taxDue = 230.00f + (.06f * (taxIncome - 7000.0f));
-    
-    printf("Your tax due amounts to: %.2f$", taxDue);
+    }
 
+    printf("Your tax due amounts to: %.2f$", taxDue);
 }

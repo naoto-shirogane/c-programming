@@ -34,6 +34,7 @@ int main(void)
         small1 = a;
         large1 = b;
     }
+    
     else
     {
         small1 = b;
@@ -45,6 +46,7 @@ int main(void)
         small2 = c;
         large2 = d;
     }
+
     else
     {
         small2 = d;
@@ -55,6 +57,7 @@ int main(void)
     {
         largest = large2;
     }
+
     else
     {
         largest = large1;
@@ -64,6 +67,7 @@ int main(void)
     {
         smallest = small1;
     }
+
     else
     {
         smallest = small2;

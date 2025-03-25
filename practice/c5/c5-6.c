@@ -1,14 +1,14 @@
 /* c5-6.c
 
-   Rafael Bonilla
-   March 14, 2025
+  Rafael Bonilla
+  March 14, 2025
    
-   C Programming: A Modern Approach, Second Edition
-   Chapter 5, Programming Project 6
+  C Programming: A Modern Approach, Second Edition
+  Chapter 5, Programming Project 6
 
-   Modify the upc.c program of Section 4.1 so that it checks
-   whether a UPC is valid. After the user enters a UPC, the
-   program will display either VALID or NOT VALID.
+  Modify the upc.c program of Section 4.1 so that it checks
+  whether a UPC is valid. After the user enters a UPC, the
+  program will display either VALID or NOT VALID.
 
 */
 
@@ -37,9 +37,13 @@ int main(void)
   valid = 9 - ((total - 1) % 10);
 
   if (checkDigit != valid)
+  {
     printf("NOT VALID");
+  }
+
   else
+  {
     printf("VALID");
     printf("Check digit: %d\n", valid);
-
+  }
 }

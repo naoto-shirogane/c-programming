@@ -25,10 +25,10 @@
 
 int main(void)
 {
+    float commission, value;
+
     for (;;)
     {
-        float commission, value;
-        
         printf("Enter value of trade (Enter 0 to exit): ");
         scanf("%f", &value);
 
@@ -61,6 +61,7 @@ int main(void)
         {
             commission = 255.00f + .0009f * value;
         }
+        
         printf("Commision: $%.2f\n", commission);
     }
 }

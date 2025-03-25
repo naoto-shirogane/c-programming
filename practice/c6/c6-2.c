@@ -27,24 +27,19 @@
 
 int main(void)
 {
-    int n1, n2, gcd, remainder;
+    int n, m, gcd, remainder;
 
     printf("Enter two integers: ");
-    scanf("%d %d", &n1, &n2);
+    scanf("%d %d", &n, &m);
 
-    for (;;)
+    while (m != 0)    
     {
-        if (n2 == 0)
-        {
-            gcd = n1;
-            break;
-        }
-        else 
-        {
-            remainder = n1 % n2;
-            n1 = n2;
-            n2 = remainder;
-        }
+        remainder = n % m;
+        n = m;
+        m = remainder;
     }
+
+    gcd = n;
+
     printf("Greatest common denominator: %d", gcd);
 }
