@@ -59,6 +59,6 @@ int main(void)
             return 0;
         }
 
-        printf("Equivalent 24-hour time: %d:%.2d", hours, minutes);
+        printf("Equivalent 24-hour time: %.2d:%.2d", hours, minutes);
     }
 }

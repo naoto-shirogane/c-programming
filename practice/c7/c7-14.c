@@ -40,21 +40,21 @@
 
 int main(void)
 {
-    double x, y, new_y, average_y, average_y_xy;
+   double x, y, guess, average_y, average_y_xy;
 
-    printf("Enter a positive number: ");
-    scanf("%lf", &x);
+   printf("Enter a positive number: ");
+   scanf("%lf", &x);
 
-    new_y = 1.0;
+   guess = 1.0;
 
-    do
-    {
-        y = new_y;
-        average_y = x/y;
-        average_y_xy = (average_y + y) / 2;
-        new_y = average_y_xy;
+   do
+   {
+      y = guess;
+      average_y = x/y;
+      average_y_xy = (average_y + y) / 2;
+      guess = average_y_xy;
 
-    } while (fabs(y - new_y) > .00001 * y);
+   } while (fabs(y - guess) > .00001 * y);
 
-    printf("Square root: %.f", new_y);
+   printf("Square root: %.5f", guess);
 }

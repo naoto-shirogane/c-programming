@@ -35,10 +35,10 @@ int main(void)
         printf("%10d%10d\n", i, i * i);
         if (i % 24 == 0)
         {
-            printf("Press Enter to continue...");
+            printf("Press enter to continue: ");
             while (getchar() != '\n')
             {
-                printf("Press Enter to continue...:");
+                ;
             }
         }
     }

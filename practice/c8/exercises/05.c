@@ -21,7 +21,7 @@ int main(void)
 {
     int fib_numbers[size_arr] = {0, 1};
 
-    printf("This are the first 40 fibonacci numbers:\n\n");
+    printf("These are the first %d fibonacci numbers:\n\n", size_arr);
 
     for (int i = 2; i < size_arr ; i++)
     {

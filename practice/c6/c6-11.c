@@ -30,19 +30,19 @@ int main(void)
     printf("Enter a number: ");
     scanf("%d", &n);
 
-    int inner_index = n; // count variable for the inner loop
+    int inner_index = n; /* count variable for the inner loop */
 
     for (int i = 1; i < n; i++)
     {
-        for (int j = 1; j < inner_index; j++) // this loop return the factorial of [1 - n)
+        for (int j = 1; j < inner_index; j++) /* this loop return the factorial of n */
         {
             fact *= j; 
         }
 
-        series += 1/fact; // the "infinite" sum of the reciprocal of the factorials
+        series += 1 / fact; /* the "infinite" sum of the reciprocal of the factorials */
  
-        fact = 1; // we set the value of fact to 1 so we can resume computing in the inner loop
-        inner_index--; // decrease the inner index, so it goes from 1/n! to 1/(n-1)!
+        fact = 1; /* we set the value of fact to 1 so we can resume computing in the inner loop */
+        inner_index--; /* decrease the count variable so we get (n-1)! */
     }
 
     printf("%f", e + series);

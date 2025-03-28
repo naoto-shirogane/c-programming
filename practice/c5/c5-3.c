@@ -36,7 +36,9 @@ int main(void)
     totalValueShares = numberShares * valueShare;
 
     if (totalValueShares < 0)
+    {
         printf("Incorrect input!");
+    }
 
     else
     {

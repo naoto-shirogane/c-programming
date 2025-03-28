@@ -27,6 +27,8 @@ int main(void)
     char letter;
     char initial_name;
 
+    printf("Enter your first and last name: ");
+
     while ((letter = getchar()) == ' ') /* skips initial whitespace */
     {
         ;

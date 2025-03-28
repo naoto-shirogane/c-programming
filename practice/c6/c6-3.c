@@ -25,7 +25,7 @@ int main(void)
     int num, den, remainder, gcd;
 
     printf("Enter a fraction: ");
-    scanf("%d/%d", &num, &den);
+    scanf("%d / %d", &num, &den);
 
     if (den == 0)
     {

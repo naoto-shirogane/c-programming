@@ -31,13 +31,13 @@ int main(void)
     {
         switch (input)
         {
-        case ' ':
-            word_count++;
-            break;
+            case ' ':
+                word_count++;
+                break;
         
-        default:
-            letter_count++;
-            break;
+            default:
+                letter_count++;
+                break;
         }
     }
 

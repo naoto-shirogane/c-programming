@@ -23,11 +23,12 @@ int main(void)
     char op;
 
     printf("Enter two fractions separated by an operator (+, -, *, /): ");
-    scanf("%d/%d %c %d/%d", &num1, &den1, &op, &num2, &den2);
+    scanf("%d / %d %c %d / %d", &num1, &den1, &op, &num2, &den2);
 
     if (den1 == 0 || den2 == 0)
     {
         printf("You can't divide by zero.");
+        return 0;
     }
 
     else 

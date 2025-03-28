@@ -38,27 +38,27 @@ int main(void)
     printf("Enter a small floating-point number ε: ");
     scanf("%f", &eps);
 
-    int inner_index = n; // count variable for the inner loop
+    int inner_index = n; /* count variable for the inner loop */ 
 
     for (int i = 1; i < n; i++)
     {
-        for (int j = 1; j < inner_index; j++) // this loop return the factorial of [1 - n)
+        for (int j = 1; j < inner_index; j++) /* this loop return the factorial of n */
         {
             fact *= j; 
         }
 
         if ((1.00f/fact) < eps)
         {
-            ; // we'll start doing something once we have a reciprocal bigger than eps
+            ; /* we'll start doing something once we have a reciprocal bigger than eps */ 
         }
 
         else 
         {
-            series += 1.00f/fact; // the "infinite" sum of the reciprocal of the factorials
+            series += 1.00f/fact; /* the "infinite" sum of the reciprocal of the factorials */
         }
         
-        fact = 1.00f; // we set the value of fact to 1 so we can resume computing in the inner loop
-        inner_index--; // decrease the inner index, so it goes from 1/n! to 1/(n-1)!
+        fact = 1.00f; /* we set the value of fact to 1 so we can resume computing in the inner loop */ 
+        inner_index--; /* decrease the inner index, so it computes (n-1)! */
     }
 
     printf("%f", e + series);

@@ -44,6 +44,7 @@ int main(void)
     for (int i = 1; i <= number_payments; i++)
     {
         balance = (balance - monthly_payment) + (balance * monthly_interest_rate);
+        
         printf("%d. %.2f\n", i, balance);
     }
 

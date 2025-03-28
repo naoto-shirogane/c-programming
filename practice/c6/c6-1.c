@@ -33,7 +33,7 @@ int main(void)
 
     do 
     {
-        printf("Enter a number: ");
+        printf("Enter a number: (Enter 0 to terminate)");
         scanf("%f", &n);
 
         if (n > largest)

@@ -31,10 +31,10 @@
  int main(void)
  {
 
-    for (long i = 1; i * i > 0; i++)
-    {
-        printf("%10d%10d\n", i, i * i);
-    }
+   for (long i = 1; i * i > 0; i++)
+   {
+      printf("%10d%10d\n", i, i * i);
+   }
  }
 
 

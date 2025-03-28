@@ -25,7 +25,7 @@ int main(void)
     char operator1, operator2;
 
     float operand1, operand2, operand3, 
-    first_expr_result, second_expr_result;
+    result;
 
     printf("Enter an expression: ");
     scanf("%f %c %f %c %f", &operand1, &operator1, &operand2,& operator2, &operand3);
@@ -34,17 +34,25 @@ int main(void)
     
     {
         case '+':
-            first_expr_result = operand1 + operand2;
+            result = operand1 + operand2;
             break;
         case '-':
-            first_expr_result = operand1 - operand2;
+            result = operand1 - operand2;
             break;
         case '*':
-            first_expr_result = operand1 * operand2;
+            result = operand1 * operand2;
             break;
         case '/':
-            first_expr_result = operand1 / operand2;
-            break;
+            if (operand2 == 0)
+            {
+                printf("You can't divide by 0");
+                return 0;
+            }
+            else
+            {
+                result = operand1 / operand2;
+                break;
+            }
         default:
             printf("Invalid operator. Try again");
             return 0;
@@ -54,21 +62,29 @@ int main(void)
 
     {
         case '+':
-            second_expr_result = first_expr_result + operand3;
+            result += operand3;
             break;
         case '-':
-            second_expr_result = first_expr_result - operand3;
+            result -= operand3;
             break;
         case '*':
-            second_expr_result = first_expr_result * operand3;
+            result *= operand3;
             break;
         case '/':
-            second_expr_result = first_expr_result / operand3;
-            break;
+            if (operand3 == 0)
+            {
+                printf("You can't divide by 0.");
+                return 0;
+            }
+            else
+            {
+                result /= operand3;
+                break;
+            }
         default:
             printf("Invalid operator. Try again");
             return 0;
     }
     
-    printf("Value of expression: %.2f", second_expr_result);
+    printf("Value of expression: %.2f", result);
 }

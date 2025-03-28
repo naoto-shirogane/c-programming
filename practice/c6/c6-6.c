@@ -28,7 +28,7 @@ int main(void)
     printf("Enter a number: ");
     scanf("%d", &n);
 
-    for (int i = 0; i * i <= n; i++)
+    for (int i = 1; i * i <= n; i++)
     {
         if ((i * i) % 2 == 0)
         {
