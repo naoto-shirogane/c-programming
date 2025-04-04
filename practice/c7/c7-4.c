@@ -34,10 +34,10 @@ int main(void)
     char letter;
     printf("Enter phone number: ");
 
-    while ((letter = getchar()) != '\n')
-    {
-        switch (toupper(letter))
-        {
+    while ((letter = getchar()) != '\n') {
+        
+        switch (toupper(letter)) {
+
             case 'A': case 'B': case 'C':
                 printf("2");
                 break;

@@ -34,8 +34,9 @@ int main(void)
 
     for (int i = 1; i < n; i++)
     {
-        for (int j = 1; j < inner_index; j++) /* this loop return the factorial of n */
-        {
+
+        for (int j = 1; j < inner_index; j++) {
+            
             fact *= j; 
         }
 

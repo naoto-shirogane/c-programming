@@ -11,7 +11,9 @@
     fib_numbers of length 40 and fills the array with the first 40 Fibonacci numbers.
 
     Hint:
-    Fill in the first two numbers individually, then use a loop to compute the remaining numbers */
+    Fill in the first two numbers individually, then use a loop to compute the remaining numbers 
+    
+*/
 
 
 #define size_arr 40
@@ -23,13 +25,13 @@ int main(void)
 
     printf("These are the first %d fibonacci numbers:\n\n", size_arr);
 
-    for (int i = 2; i < size_arr ; i++)
-    {
+    for (int i = 2; i < size_arr ; i++) {
+
         fib_numbers[i] = fib_numbers[i - 1] + fib_numbers[i - 2];
     }
 
-    for (int i = 0; i < size_arr; i++)
-    {
+    for (int i = 0; i < size_arr; i++) {
+        
         printf("%d. %d\n", i, fib_numbers[i]);
     }
 }

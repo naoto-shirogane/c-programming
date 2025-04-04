@@ -27,17 +27,17 @@ int main(void)
     printf("Enter a fraction: ");
     scanf("%d / %d", &num, &den);
 
-    if (den == 0)
-    {
+    if (den == 0) {
+
         printf("You can't divide by 0!");
     }
 
-    else
-    {
+    else {
+
         int n = num, m = den;
 
-        while (m != 0)    
-        {
+        while (m != 0) {
+            
             remainder = n % m;
             n = m;
             m = remainder;

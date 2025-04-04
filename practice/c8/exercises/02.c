@@ -19,7 +19,9 @@
    
         2.  We'll substract the ASCII code of 0 (48) from the ASCII Code of 8 (56)
    
-        3.  This expression is equal to 8, which is the numerical representation of our digit */
+        3.  This expression is equal to 8, which is the numerical representation of our digit 
+        
+*/
 
 #include <stdio.h>
 

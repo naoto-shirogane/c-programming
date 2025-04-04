@@ -30,9 +30,8 @@ int main(void)
     printf("Enter an expression: ");
     scanf("%f %c %f %c %f", &operand1, &operator1, &operand2,& operator2, &operand3);
 
-    switch (operator1)
-    
-    {
+    switch (operator1) {
+
         case '+':
             result = operand1 + operand2;
             break;
@@ -43,13 +42,13 @@ int main(void)
             result = operand1 * operand2;
             break;
         case '/':
-            if (operand2 == 0)
-            {
+            if (operand2 == 0) {
+
                 printf("You can't divide by 0");
                 return 0;
             }
-            else
-            {
+            else {
+
                 result = operand1 / operand2;
                 break;
             }
@@ -58,9 +57,8 @@ int main(void)
             return 0;
     }
 
-    switch (operator2)
+    switch (operator2) {
 
-    {
         case '+':
             result += operand3;
             break;
@@ -71,13 +69,13 @@ int main(void)
             result *= operand3;
             break;
         case '/':
-            if (operand3 == 0)
-            {
+            if (operand3 == 0) {
+
                 printf("You can't divide by 0.");
                 return 0;
             }
-            else
-            {
+            else {
+                
                 result /= operand3;
                 break;
             }

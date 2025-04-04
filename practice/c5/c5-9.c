@@ -31,18 +31,18 @@ int main(void)
     date1 = ((month1 * 30) + day1 + (year1 * 365));
     date2 = ((month2 * 30) + day2 + (year2 * 365));
 
-    if (date1 < date2)
-    {
+    if (date1 < date2) {
+
         printf("- %d/%d/%.2d comes earlier than %d/%d/%.2d", day1, month1, year1, day2, month2, year2);
     }
 
-    else if (date2 < date1)
-    {
+    else if (date2 < date1) {
+
         printf("- %d/%d/%.2d comes earlier than %d/%d/%.2d", day2, month2, year2, day1, month1, year1);
     }
 
-    else
-    {
+    else {
+        
         printf("- They're the same date.");
     }
 }

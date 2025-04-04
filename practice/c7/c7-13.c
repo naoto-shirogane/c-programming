@@ -27,10 +27,10 @@ int main(void)
     char input;
     int letter_count, word_count = 1;
 
-    while ((input = getchar()) != '\n')
-    {
-        switch (input)
-        {
+    while ((input = getchar()) != '\n') {
+
+        switch (input) {
+
             case ' ':
                 word_count++;
                 break;
@@ -41,5 +41,5 @@ int main(void)
         }
     }
 
-    printf("Average word length: %.1f", (float) letter_count / word_count);
+    printf("Average word length: %.2f", (float) letter_count / word_count);
 }

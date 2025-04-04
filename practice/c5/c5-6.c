@@ -36,13 +36,13 @@ int main(void)
   total = 3 * first_sum + second_sum;
   valid = 9 - ((total - 1) % 10);
 
-  if (checkDigit != valid)
-  {
+  if (checkDigit != valid) {
+
     printf("NOT VALID");
   }
 
-  else
-  {
+  else {
+    
     printf("VALID");
     printf("Check digit: %d\n", valid);
   }

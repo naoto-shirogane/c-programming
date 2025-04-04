@@ -29,47 +29,47 @@ int main(void)
     printf("Enter four integers: ");
     scanf("%d %d %d %d", &a, &b, &c, &d);
 
-    if (a < b)
-    {
+    if (a < b) {
+
         small1 = a;
         large1 = b;
     }
     
-    else
-    {
+    else {
+
         small1 = b;
         large1 = a;
     }
 
-    if (c < d)
-    {
+    if (c < d) {
+
         small2 = c;
         large2 = d;
     }
 
-    else
-    {
+    else {
+
         small2 = d;
         large2 = c;
     }
 
-    if (large1 < large2)
-    {
+    if (large1 < large2) {
+        
         largest = large2;
     }
 
-    else
-    {
+    else {
+
         largest = large1;
     }
 
-    if (small1 < small2)
-    {
+    if (small1 < small2) {
+
         smallest = small1;
     }
 
-    else
-    {
+    else {
+        
         smallest = small2;
     }
 

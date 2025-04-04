@@ -32,8 +32,8 @@ int main(void)
     printf("Enter two integers: ");
     scanf("%d %d", &n, &m);
 
-    while (m != 0)    
-    {
+    while (m != 0) {
+        
         remainder = n % m;
         n = m;
         m = remainder;

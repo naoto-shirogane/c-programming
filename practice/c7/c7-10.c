@@ -24,13 +24,14 @@ int main(void)
 
     printf("Enter a sentence: ");
 
-    while ((letter = getchar()) != '\n')
-    {
-        switch (toupper(letter))
-        {
+    while ((letter = getchar()) != '\n') {
+
+        switch (toupper(letter)) {
+
             case 'A': case 'E': case 'I': case 'O': case'U':
                 count++;
                 break;
+                
             default:
                 break;
         }

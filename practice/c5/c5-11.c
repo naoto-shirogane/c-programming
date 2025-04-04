@@ -29,19 +29,20 @@ int main(void)
     printf("Enter a two-digit number: ");
     scanf("%2d", &n);
 
-    if (n < 10 || n > 99)
-    {
+    if (n < 10 || n > 99) {
+
         printf("Error!");
     }
-    else 
-    {
+
+    else {
+
         firstDigit = n / 10;
         secondDigit = n % 10;
 
-        if (firstDigit == 1)
-        {
-            switch (secondDigit)
-            {
+        if (firstDigit == 1) {
+
+            switch (secondDigit) {
+
                 case 1: printf("Eleven"); break;
                 case 2: printf("Twelve"); break;
                 case 3: printf("Thirteen"); break;
@@ -55,10 +56,10 @@ int main(void)
             }
         }
 
-        else 
-        {
-            switch (firstDigit)
-            {
+        else {
+
+            switch (firstDigit) {
+
                 case 2: printf("Twenty"); break;
                 case 3: printf("Thirty"); break;
                 case 4: printf("Forty"); break;
@@ -69,8 +70,8 @@ int main(void)
                 case 9: printf("Ninety"); break;
             }
     
-            switch (secondDigit)
-            {
+            switch (secondDigit) {
+                
                 case 1: printf("-one"); break;
                 case 2: printf("-two"); break;
                 case 3: printf("-three"); break;

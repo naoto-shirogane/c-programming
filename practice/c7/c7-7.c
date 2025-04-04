@@ -25,16 +25,16 @@ int main(void)
     printf("Enter two fractions separated by an operator (+, -, *, /): ");
     scanf("%d / %d %c %d / %d", &num1, &den1, &op, &num2, &den2);
 
-    if (den1 == 0 || den2 == 0)
-    {
+    if (den1 == 0 || den2 == 0) {
+        
         printf("You can't divide by zero.");
         return 0;
     }
 
-    else 
-    {
-        switch (op)
-        {
+    else  {
+
+        switch (op) {
+
             case '+':
                 result_num = num1 * den2 + num2 * den1;
                 result_den = den1 * den2;
@@ -64,9 +64,8 @@ int main(void)
 
         int n = result_num, m = result_den;
 
-        while (m != 0) 
-        
-        {
+        while (m != 0)  {
+
             remainder = n % m;
             n = m;
             m = remainder;

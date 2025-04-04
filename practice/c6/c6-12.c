@@ -40,20 +40,20 @@ int main(void)
 
     int inner_index = n; /* count variable for the inner loop */ 
 
-    for (int i = 1; i < n; i++)
-    {
-        for (int j = 1; j < inner_index; j++) /* this loop return the factorial of n */
-        {
+    for (int i = 1; i < n; i++) {
+        
+        for (int j = 1; j < inner_index; j++) {
+
             fact *= j; 
         }
 
-        if ((1.00f/fact) < eps)
-        {
+        if ((1.00f / fact) < eps) {
+
             ; /* we'll start doing something once we have a reciprocal bigger than eps */ 
         }
 
-        else 
-        {
+        else {
+
             series += 1.00f/fact; /* the "infinite" sum of the reciprocal of the factorials */
         }
         

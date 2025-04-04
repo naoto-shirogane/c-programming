@@ -36,8 +36,8 @@ int main(void)
         printf("Enter a number: (Enter 0 to terminate)");
         scanf("%f", &n);
 
-        if (n > largest)
-        {
+        if (n > largest) {
+            
             largest = n;
         }
 

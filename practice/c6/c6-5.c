@@ -29,8 +29,7 @@ int main(void)
 
     printf("The reversal is: ");
 
-    do
-    {
+    do {
 
         lastDigit = otherDigits % 10; /* gets the last digit */
         printf("%d", lastDigit); 

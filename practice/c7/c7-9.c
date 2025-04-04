@@ -29,34 +29,34 @@ int main(void)
     printf("Enter a 12-hour time: ");
     scanf("%d:%2d %c", &hours, &minutes, &meridiam);
 
-    if (hours < 0 || hours >= 24)
-    {
+    if (hours < 0 || hours >= 24) {
+
         printf("Wrong hour format. Try again");
     }
-    else if (minutes < 0 || minutes > 59)
-    {
+    else if (minutes < 0 || minutes > 59) {
+
         printf("Wrong minute format. Try again");
     }
 
-    else 
-    {
-        if (hours == 12)
-        {
+    else {
+
+        if (hours == 12) {
+
             hours = 0;
         }
 
-        switch (meridiam = toupper(meridiam))
-        {
-        case 'A':
-            break;
-        
-        case 'P':
-            hours += 12;
-            break;
-        
-        default:
-            printf("Invalid AM/PM entry");
-            return 0;
+        switch (meridiam = toupper(meridiam)) {
+
+            case 'A':
+                break;
+
+            case 'P':
+                hours += 12;
+                break;
+
+            default:
+                printf("Invalid AM/PM entry");
+                return 0;
         }
 
         printf("Equivalent 24-hour time: %.2d:%.2d", hours, minutes);

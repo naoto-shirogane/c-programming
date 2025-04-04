@@ -10,6 +10,7 @@
    sum a series of double values.
 
 */
+
 #include <stdio.h>
 
 int main(void)
@@ -20,10 +21,12 @@ int main(void)
     printf("Enter floating-points (0 to terminate): ");
 
     scanf("%lf", &n);
-    while (n != 0.0)
-    {
+
+    while (n != 0.0) {
+
         sum += n;
         scanf("%lf", &n);
     }
+
     printf("The sum is: %f\n", sum);
 }

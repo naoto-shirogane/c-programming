@@ -29,22 +29,27 @@ int main(void)
 
     printf("Enter your first and last name: ");
 
-    while ((letter = getchar()) == ' ') /* skips initial whitespace */
-    {
+    /* skips initial whitespace */
+
+    while ((letter = getchar()) == ' ')  {
         ;
     }
 
     initial_name = letter; /* finds the initial */
 
-    while ((letter = getchar()) != ' ') /* loops until it finds a whitespace*/
-    {
+    /* loops until it finds a whitespace*/
+
+    while ((letter = getchar()) != ' ') {
+
         ;
     }
 
-    while ((letter = getchar()) != '\n') /* loops the rest of the string */
-    {
-        if (letter != ' ') /* if it's not a space, then it prints it */
-        {
+    /* loops the rest of the string */
+
+    while ((letter = getchar()) != '\n') {
+
+        if (letter != ' ') {
+
             putchar(letter);
         }
     }

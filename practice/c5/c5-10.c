@@ -29,21 +29,24 @@ int main(void)
     printf("Enter numerical grade: ");
     scanf("%d", &numGrade);
 
-    if (numGrade < 0 || numGrade > 100)
-    {
+    if (numGrade < 0 || numGrade > 100) {
+
         printf("Error!");
     }
-    else
-    {
+
+    else {
+
         firstDigit = numGrade / 10;
-        switch (firstDigit)
-        {
+
+        switch (firstDigit) {
+
             case 10: case 9: letterGrade = 'A'; break;
             case 8: letterGrade = 'B'; break;
             case 7: letterGrade = 'C'; break;
             case 6: letterGrade = 'D'; break;
             case 5: default: letterGrade = 'F'; break; // default means that the grade was lower than 50
         }
+        
         printf("Letter grade: %c", letterGrade);
     }
 }

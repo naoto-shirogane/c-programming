@@ -60,13 +60,13 @@ int main(void)
     printf("Enter a 12-hour time: ");
     scanf("%d:%d %c",&hours, &minutes, &meridiam);
 
-    if (hours == 12)
-    {
+    if (hours == 12) {
+
         hours = 0;
     }
 
-    switch (meridiam = toupper(meridiam))
-    {
+    switch (meridiam = toupper(meridiam)) {
+
         case 'A':
             break;
     
@@ -81,96 +81,103 @@ int main(void)
 
     timeInMinutes = (hours * 60) + minutes;
 
-    if (timeInMinutes >= 24 * 60 || timeInMinutes <= 0)
-    {
+    if (timeInMinutes >= 24 * 60 || timeInMinutes <= 0) {
+
         printf("Invalid hh:mm format");
     }
 
-    else
-    {
-        if (timeInMinutes >= 1 && timeInMinutes < departure8AM)
-        {
+    else {
+
+        if (timeInMinutes >= 1 && timeInMinutes < departure8AM) {
+
             printf("8:00 am, arriving at 10:15 am");
         }
-        else if (timeInMinutes >= departure8AM && timeInMinutes < departure9AM)
-        {
-            if (departure9AM - timeInMinutes > timeInMinutes - departure8AM)
-            {
+
+        else if (timeInMinutes >= departure8AM && timeInMinutes < departure9AM) {
+
+            if (departure9AM - timeInMinutes > timeInMinutes - departure8AM) {
+
                 printf("8:00 am, arriving at 10:15 am");
             }
-            else
-            {
+            else {
+
                 printf("9:43 am, arriving at 11:52 am");
             }
         }
-        else if (timeInMinutes >= departure9AM && timeInMinutes < departure11AM)
-        {
-            if (departure11AM - timeInMinutes > timeInMinutes - departure9AM)
-            {
+
+        else if (timeInMinutes >= departure9AM && timeInMinutes < departure11AM) {
+
+            if (departure11AM - timeInMinutes > timeInMinutes - departure9AM) {
+
                 printf("9:43 am, arriving at 11:52 am");
             }
-            else
-            {
+            else {
+
                 printf("11:19 am, arriving at 1:30 pm");
             }
         }
-        else if (timeInMinutes >= departure11AM && timeInMinutes < departure12PM)
-        {
-            if (departure12PM - timeInMinutes > timeInMinutes - departure11AM)
-            {
+
+        else if (timeInMinutes >= departure11AM && timeInMinutes < departure12PM) {
+
+            if (departure12PM - timeInMinutes > timeInMinutes - departure11AM) {
+
                 printf("11:19 am, arriving at 1:30 pm");
             }
-            else
-            {
+            else {
+
                 printf("12:47 pm, arriving at 3:00 pm");
             }
         }
-        else if (timeInMinutes >= departure12PM && timeInMinutes < departure2PM)
-        {
-            if (departure2PM - timeInMinutes > timeInMinutes - departure12PM)
-            {
+
+        else if (timeInMinutes >= departure12PM && timeInMinutes < departure2PM) {
+
+            if (departure2PM - timeInMinutes > timeInMinutes - departure12PM) {
                 printf("12:47 pm, arriving at 3:00 pm");
             }
-            else
-            {
+            else {
+
                 printf("2:00 pm, arriving at 4:08 pm");
             }
         }
-        else if (timeInMinutes >= departure2PM && timeInMinutes < departure3PM)
-        {
-            if (departure3PM - timeInMinutes > timeInMinutes - departure2PM)
-            {
+        
+        else if (timeInMinutes >= departure2PM && timeInMinutes < departure3PM) {
+
+            if (departure3PM - timeInMinutes > timeInMinutes - departure2PM) {
+
                 printf("2:00 pm, arriving at 4:08 pm");
             }
-            else
-            {
+            else {
+
                 printf("3:45 pm, arriving at 5:55 pm");
             }
         }
-        else if (timeInMinutes >= departure3PM && timeInMinutes < departure7PM)
-        {
-            if (departure7PM - timeInMinutes > timeInMinutes - departure3PM)
-            {
+
+        else if (timeInMinutes >= departure3PM && timeInMinutes < departure7PM) {
+
+            if (departure7PM - timeInMinutes > timeInMinutes - departure3PM) {
+                
                 printf("3:45 pm, arriving at 5:55 pm");
             }
-            else
-            {
+            else {
+
                 printf("7:00 pm, arriving at 9:20 pm");
             }
         }
-        else if (timeInMinutes >= departure7PM && timeInMinutes < departure9PM)
-        {
-            if (departure9PM - timeInMinutes > timeInMinutes - departure7PM)
-            {
+
+        else if (timeInMinutes >= departure7PM && timeInMinutes < departure9PM) {
+
+
+            if (departure9PM - timeInMinutes > timeInMinutes - departure7PM) {
+
                 printf("7:00 pm, arriving at 9:20 pm");
             }
-            else
-            {
+            else {
+
                 printf("9:45 pm, arriving 11:58 pm");;
             }
         }
-        else if (timeInMinutes >= departure9PM && timeInMinutes < midnight)
-        {
+        else if (timeInMinutes >= departure9PM && timeInMinutes < midnight) {
+
             printf("9:45 pm, arriving 11:58 pm");
         }
     }

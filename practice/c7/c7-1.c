@@ -25,16 +25,15 @@
 
 */
 
+#include <stdio.h>
 
- #include <stdio.h>
+int main(void)
+{
 
- int main(void)
- {
+   for (long i = 1; i * i > 0; i++) {
 
-   for (long i = 1; i * i > 0; i++)
-   {
       printf("%10d%10d\n", i, i * i);
    }
- }
+}
 
 

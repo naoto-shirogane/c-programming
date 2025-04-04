@@ -31,10 +31,10 @@ int main(void)
 
     printf("Enter a word: ");
 
-    while ((letter = getchar()) != '\n')
-    {
-        switch (toupper(letter))
-        {
+    while ((letter = getchar()) != '\n') {
+        
+        switch (toupper(letter)) {
+
             case 'A': case 'E': case 'I': case 'L': case 'N': case 'O': case 'R': case 'S': case 'T': case 'U':
                 sum += 1;
                 break;

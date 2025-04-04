@@ -25,17 +25,17 @@ int main(void)
     printf("Enter a 24-hour time: ");
     scanf("%d:%d", &hour, &minutes);
 
-    if (hour > 24 || hour < 0 || minutes > 59 || minutes < 0)
-    {
+    if (hour > 24 || hour < 0 || minutes > 59 || minutes < 0) {
+
         printf("Incorrect input!");
     }
 
-    else
-    {
+    else {
+
         printf("Equivalent 12-hour time: ");
 
-        switch (hour)
-        {
+        switch (hour) {
+
             case 13: printf("1"); break;
             case 14: printf("2"); break;
             case 15: printf("3"); break;
@@ -53,13 +53,13 @@ int main(void)
     
         printf(":%.2d ", minutes);
     
-        if (hour < 12)
-        {
+        if (hour < 12) {
+
             printf("AM");
         }
 
-        else
-        {
+        else {
+            
             printf("PM");
         }
     }
